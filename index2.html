@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="happiness.png">
+    <title>Welcome to happiness.com</title>
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+            transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+        }
+        .darkmode {
+            background-color: black;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li{
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>This is the header of the webpage</h3>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CREATE ACCOUNT</a></li>
+            <li><a href="#">LOG IN</a></li>
+        </ul>
+    </header>
+    <main>
+        <h4>This is the main content</h4>
+        <p>This is a paragraph</p>
+        <img src="happiness.png" width="50px">
+    </main>
+    <footer>
+        <h3>This is the footer content</h3>
+        <p>This is a paragraph</p>
+    </footer>
+    <button onclick="toggleDarkMode()">Darkmode</button>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("darkmode");
+        }
+    </script>
+</body>
+</html>
